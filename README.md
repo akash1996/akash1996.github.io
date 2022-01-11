@@ -1,172 +1,161 @@
-# Topaz
-[![Actions Status](https://github.com/Naresh1318/topaz/workflows/Topaz/badge.svg)](https://github.com/Naresh1318/Topaz/actions)
+<img src="https://i.imgur.com/eA6clZr.png">
 
-<p align=center>
-    <img src="https://files.naresh1318.com/public/topaz/index.png" alt="simplyServe"/>
-    <p align="center"> <b>A configurable, easy to maintain personal website</b> </p>
-</p>
+# Gitfolio 
+[![Tweet](https://img.shields.io/twitter/url/https/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=personal%20website%20and%20a%20blog%20for%20every%20github%20user%20@imfunnieee%20&url=https://github.com/imfunniee/gitfolio) ![GitHub release](https://img.shields.io/github/release/imfunniee/gitfolio.svg?style=popout-square) ![npm](https://img.shields.io/npm/dm/gitfolio.svg?style=popout-square) ![GitHub top language](https://img.shields.io/github/languages/top/imfunniee/gitfolio.svg?style=popout-square) ![GitHub last commit](https://img.shields.io/github/last-commit/imfunniee/gitfolio.svg?style=popout-square) ![GitHub](https://img.shields.io/github/license/imfunniee/gitfolio.svg?style=popout-square) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+### personal website + blog for every github user
 
-**Live example**: https://naresh1318.com
+Gitfolio will help you get started with a portfolio website where you could showcase your work + a blog that will help you spread your ideas into real world.
 
-After working on a project the last thing I usually think of is updating my personal website. 
-Adding links, images, description and pushing changes to the server every single time I work 
-on something new is kinda boring especially if you are lazy like me. What do we do when we're lazy?
-we automate things. Thereby giving us time to, idk, complain about our laziness. I designed Topaz 
-to automatically update as much of my website as possible.
+Check out this [live demo](https://imfunniee.github.io/gitfolio/) to see gitfolio in action.
 
-### Recent updates:
-* Added ability to write and publish blogs
-* Revamped home, project and blog pages
+# Getting Started
 
-## Here's what it can currently do:
+### Let's Install
 
-1. Automatically fetch public repos from your github account
+Install gitfolio
 
-<p align=center>
-    <img src="https://files.naresh1318.com/public/topaz/projects.png" alt="simplyServe"/>
-    <p align="center"> <b>Projects from github</b> </p>
-</p>
+```sh
+npm i gitfolio -g
+```
 
-2. Admin page that lets you easily add blogs and publication details
+### Let's Build
 
-<p align=center>
-    <img src="https://files.naresh1318.com/public/topaz/admin.png" alt="simplyServe" width="400px"/>
-    <p align="center"> <b>Add blogs and publications details</b> </p>
-</p>
+Using the UI
 
-3. Choose what gets shown
+```sh
+$ gitfolio ui
+```
 
-<p align=center>
-    <img src="https://files.naresh1318.com/public/topaz/admin_projects.png" alt="simplyServe"/>
-    <p align="center"> <b>Manage what gets shown</b> </p>
-</p>
+> Tip: You can use ui to create new blogs and for updating your folio too.
 
-4. Ability to modify/write content using markdown
+or
 
-5. Customize website by editing `theme.json` file
+```sh
+gitfolio build <username>
+```
 
-```json
+`<username>` is your username on github. This will build your website using your GitHub username and put it in the `/dist` folder.
+
+To run your website use `run` command, Default port is 3000
+
+```sh
+gitfolio run -p [port]
+```
+
+🎉 Congrats, you just made yourself a personal website!
+
+### Let's Customize
+
+#### Forks
+
+To include forks on your personal website just provide `-f` or `--fork` argument while building
+
+```sh
+$ gitfolio build <username> -f
+```
+
+#### Sorting Repos
+
+To sort repos provide `--sort [sortBy]` argument while building. Where `[sortBy]` can be `star`, `created`, `updated`, `pushed`,`full_name`. Default: `created`
+
+```sh
+$ gitfolio build <username> --sort star
+```
+
+#### Ordering Repos
+
+To order the sorted repos provide `--order [orderBy]` argument while building. Where `[orderBy]` can be `asc` or `desc`. Default: `asc`
+
+```sh
+$ gitfolio build <username> --sort star --order desc
+```
+
+#### Customize Themes
+
+Themes are specified using the `--theme [theme-name]` flag when running the `build` command. The available themes are
+
+- `light`
+- `dark`
+
+> TODO: Add more themes
+
+For example, the following command will build the website with the dark theme
+
+```sh
+$ gitfolio build <username> --theme dark
+```
+
+#### Customize background image
+
+To customize the background image just provide `--background [url]` argument while building
+
+```sh
+$ gitfolio build <username> --background https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634
+```
+
+You could also add in your custom CSS inside `index.css` to give it a more personal feel.
+
+#### Add Social Media links on your profile
+
+Twitter, LinkedIn, Medium & Dribbble links to your profile while building
+
+```sh
+gitfolio build <username> --twitter <twitter_username> --linkedin <linkedin_username> --medium <medium_username> --dribbble <dribbble_username>
+```
+
+### Let's Publish
+
+Head over to GitHub and create a new repository named `username.github.io`, where username is your username. Push the files inside`/dist` folder to repo you just created.
+
+Go To `username.github.io` your site should be up!!
+
+### Updating
+
+To update your info, simply run
+
+```sh
+$ gitfolio update
+```
+
+or use the `Update` options in gitfolio's UI
+
+This will update your info and your repository info.
+
+To Update background or theme you need to run `build` command again.
+
+### Add a Blog
+
+To add your first blog use the UI.
+
+```sh
+$ gitfolio ui
+```
+
+This will open up a UI page and you can click on `New Blog` to create a new blog. Once you are done writing your blog you can hit the `Create Blog`.
+
+This will create a blog inside `./dist/blog` folder.
+
+Look for success or error in your terminal.
+
+This also adds content to `blog.json` file. This file helps in showcasing your blogs on your personal website as [cards](https://imfunniee.github.io/gitfolio/#blog_section). You could customize the JSON object that corresponds your current blog.
+
+Blog Demo? [here](https://imfunniee.github.io/gitfolio/blog/my-first-post/)
+
+Blog's default JSON Format
+
+```
 {
-  "name": "Naresh Nagabushan",
-  "profile_picture_url": "https://files.naresh1318.com/public/Me/IMG_2831_low.jpg",
-  "nav_bar_footer": {
-      "github": {
-        "link": "https://github.com/Naresh1318",
-        "icon": "fa-github"
-      },
-      "medium": {
-        "link": "https://medium.com/@rnaresh.n",
-        "icon": "fa-medium"
-      },
-      "linkedin": {
-        "link": "https://www.linkedin.com/in/naresh-nagabushan-2946b013a",
-        "icon": "fa-linkedin"
-      },
-      "twitter": {
-        "link": "https://twitter.com/Naresh_Reddy_",
-        "icon": "fa-twitter"
-      }
-  }
+  "url_title": "my-first-blog", // the title you provide while creating a new blog, this appears in url
+  "title": "Lorem ipsum dolor sit amet", // main title of blog
+  "sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", // sub-title of blog
+  "top_image": "https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1450", // main image of blog
+  "visible": true // don't worry about this
 }
 ```
-6. Mobile friendly (currently working on this)
 
-<p align=center>
-    <img src="https://files.naresh1318.com/public/topaz/mobile.png" alt="simplyServe" width="50%"/>
-    <p align="center"> <b>Mobile friendly</b> </p>
-</p>
+### Follow me on twitter for more updates [@imfunnieee](https://twitter.com/imfunnieee)
 
-## Here are the things that I'm still working on:
+### License
 
-* Ability to publish and write blogs using markdown
-* 
-
-
-
-## Install
-Super easy as always. Clone before you start!
-
-1. Edit `data/theme.json` file to reflect what you want. Here's another example:
-
-```json
-{
-  "name": "Naresh Nagabushan",
-  "profile_picture_url": "https://files.naresh1318.com/public/Me/IMG_2831_low.jpg",
-  "nav_bar_footer": {
-      "github": {
-        "link": "https://github.com/Naresh1318",
-        "icon": "fa-github"
-      },
-      "medium": {
-        "link": "https://medium.com/@rnaresh.n",
-        "icon": "fa-medium"
-      },
-      "linkedin": {
-        "link": "https://www.linkedin.com/in/naresh-nagabushan-2946b013a",
-        "icon": "fa-linkedin"
-      },
-      "twitter": {
-        "link": "https://twitter.com/Naresh_Reddy_",
-        "icon": "fa-twitter"
-      }
-  }
-}
-```
-
-2. Generate a github token by visiting this link: https://github.com/settings/tokens 
-and select the repo checkbox. Give it a name if you want and copy the token.
-
-3. cd into the project root dir and paste the key into a keys.txt file
-```bash
-echo "token <your key>" >> keys.txt
-```
-
-**Note: ** Do not ignore the "token " prefix
-
-4. Install docker if you don't have it already using this link: 
-https://docs.docker.com/install
-
-5. Add an admin account
-
-   * Modify `Dockerfile` under project root:
-
-     ```bash
-        ENV USERNAME "<username>"
-        ENV PASSWORD "<password>"
-     ```
-
-4. Build your image:
-
-   ```bash
-   docker build -t <image name>:<tag> .
-   ```
-
-   Here's how mine looks:
-
-   ```bash
-   docker build -t topaz:latest .
-   ```
-
-5. Run your image:
-
-   ```bash
-   docker run -p <port to forward>:5000 -v absolute path to data dir in project:/app/data/ <image name>:<tag>
-   ```
-
-   Here's mine:
-
-   ```bash
-   docker run -p 4000:5000 -v /home/naresh/Projects/Topaz/data/:/app/data/ topaz:latest
-
-6. Finally, go to `localhost:<port forwarded to>` on your browser
-
-7. You can access the login page using `localhost:<port forwarded to>/login`. Example `localhost:4000/login`. 
-Login using the username and password you setup earlier.
-
-**Note:** *You could also modify the `docker-compose.yml` file to install topaz*
-
-
-## Concluding thoughts
-1. Feel free to do a pull request if you fix bugs
-2. Email me rnaresh.n@gmail.com if you have any suggestions!
+![GitHub](https://img.shields.io/github/license/imfunniee/gitfolio.svg?style=popout-square)
