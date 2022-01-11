@@ -83,37 +83,36 @@ experiences:
       time: Apr 2020 - Aug 2021
       company: Mr Cooper
       details: |
-        Research
-        Digital Middle Office Transformation
+        Research | Digital Middle Office Transformation
          - Digitalized loan processing flow and reduced processing from from 14 days to 14 seconds
-        • Empowered users to use Encompass and FHA Connect on an intuitive and Responsive UI
-        • Led a four-person team and conducted hands-on workshops and sessions on full-stack development
+         - Empowered users to use Encompass and FHA Connect on an intuitive and Responsive UI
+         - Led a four-person team and conducted hands-on workshops and sessions on full-stack development
         Back Office Software System
-        • Migrated On-premises Database to Azure Cloud using Azure Database Migration Service
-        • Implemented DevOps for development, scaling and management of pipelines using Kubernetes
-        • Designed Email Configuration that delivered improved team and enterprise wide communication License Uploader - MVC Application
-        • Designed Service bus for micro service communications and Distributed systems
-        • Demonstrated a solution to receive incoming customers lead, reduced latency for consumers
-        • Deployed services using Docker & Kubernetes in Microsoft Azure using CI/CD scripts
+         - Migrated On-premises Database to Azure Cloud using Azure Database Migration Service
+         - Implemented DevOps for development, scaling and management of pipelines using Kubernetes
+         - Designed Email Configuration that delivered improved team and enterprise wide communication License Uploader - MVC Application
+         - Designed Service bus for micro service communications and Distributed systems
+         - Demonstrated a solution to receive incoming customers lead, reduced latency for consumers
+         - Deployed services using Docker & Kubernetes in Microsoft Azure using CI/CD scripts
     - role: Software Engineer 1
       time: Dec 2018 - Mar 2020
       company: Mr Cooper
       details: |
         Leads Connect Web Portal
-        • Designed multiple layers and backend Rest APIs using SQL Injection in .Net Core
-        • Integrated various micro services in .NET via a React/Redux powered front end
-        • Presented tech talks on various topics involving JavaScript, React, Redux, Micro services and Docker Leads Connect Attribution System
-        • Enhanced the performance by reducing the number of API calls using Redis cache
-        • Containerized the application code using Docker and added CI/CD pipelines for deployment
-        • Improved operational stability by integrating fail-over mechanisms, logging, & health check alerts
+         - Designed multiple layers and backend Rest APIs using SQL Injection in .Net Core
+         - Integrated various micro services in .NET via a React/Redux powered front end
+         - Presented tech talks on various topics involving JavaScript, React, Redux, Micro services and Docker Leads Connect Attribution System
+         - Enhanced the performance by reducing the number of API calls using Redis cache
+         - Containerized the application code using Docker and added CI/CD pipelines for deployment
+         - Improved operational stability by integrating fail-over mechanisms, logging, & health check alerts
     - role: Software Engineer Trainee
       time: June 2018 - Nov 2018
       company: Nationstar Mortgage
       details: |
         Legal Settlement Portal
-        • Developed Legal settlement application resulting in 3-million-dollar profit to company
-        • Created authentication framework and authorization on Node for ADFS (AzureAD)
-        • Implemented Azure Queue for an event driven communication system within the micro services
+         - Developed Legal settlement application resulting in 3-million-dollar profit to company
+         - Created authentication framework and authorization on Node for ADFS (AzureAD)
+         - Implemented Azure Queue for an event driven communication system within the micro services
 projects:
     title: Projects
     intro: >
