@@ -108,6 +108,12 @@ experiences:
          - Developed Legal settlement application resulting in 3-million-dollar profit to company
          - Created authentication framework and authorization on Node for ADFS (AzureAD)
          - Implemented Azure Queue for an event driven communication system within the micro services
+    - role: Software Engineer Intern
+      time: Jan 2018 - May 2018
+      company: Nationstar Mortgage
+      details: |
+          Data Services
+           - Agile practices with daily SCRUM meetings to keep track of the ongoing project status and issues were practiced, and Test-Driven Development (TDD) was extensively followed.
 projects:
     title: Projects
     intro: >
