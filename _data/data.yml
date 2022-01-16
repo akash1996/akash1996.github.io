@@ -49,6 +49,17 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
+      Akash Subramaniam is a philomath.
+
+
+
+       He enrolled himself for a Bachelor of Technology in Computer Science and his fascination continued when he learned Data Structures and Algorithms – that is the technical aspects of machinery and technology. At HIFIT industries, the supplier for Bharat Benz, he was introduced to basic operations and learned there were a huge number of tiers for every giant automotive firm. He was astounded by the network and planning one would require building a car.
+
+      Although this decision wasn’t his alone, the entire world knew that the dream country for a Computer Science and Technology aspirant is The United States of America. Since he entered Northeastern University, Boston for Master of Science in Computer Science, he wants to know every nook and cranny about Artifical Intelligence and Machine Learning in the industry. Overall, from being a trainee in a supplier company to an intern in Mr Cooper, Akash has grown a specific set of skills and more importantly, has learned a number of things along the way.
+
+      And now, we are right back where we started. The only difference is Harish is no longer a 4-year-old who imagines his legs are wheels. He is now a 25 year old, confident in the traits he has acquired through the years, and confident knowing the management of the whole chain of suppliers.
+
+      He is still a philomath, still looking out to learn more. There are still several questions from his younger days that are left unanswered, but he is still in the pursuit to find those answers with his immaculate imagination and consistent hard work.
       Experienced Software Developer with a demonstrated history of working in the Fin-tech industry. Skilled in React Js, C#, Data Structures and Algorithms.
 education:
     - degree: MS in Computer Science
@@ -114,6 +125,9 @@ experiences:
       details: |
           Data Services
            - Agile practices with daily SCRUM meetings to keep track of the ongoing project status and issues were practiced, and Test-Driven Development (TDD) was extensively followed.
+
+
+
 projects:
     title: Projects
     intro: >
@@ -121,13 +135,14 @@ projects:
       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: Velocity
+      - title: Research | Information Retrieval | Machine Learning| Bhuvan | ISRO May 2017
         link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+        tagline: "Built a Graph-based Service recommendation system for BHUVAN – an online service portal for Indian Space Research Organization (ISRO)
+  Deployed services using Docker & Kubernetes in Microsoft Azure using CI/CD scripts"
 
-      - title: DevStudio
+      - title: Car Parking Application | Android App Development
         link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+        tagline: "Developed an app that pops up all the available parking areas in the location"
 
       - title: Tempo
         link: "#"
@@ -141,27 +156,7 @@ projects:
         link: "#"
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-    papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
